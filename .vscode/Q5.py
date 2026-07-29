@@ -26,18 +26,18 @@ model=Sequential([
 
 model.summary()
 
-# model.compile(
-#     optimizer="adam",
-#     loss="categorical_crossentropy",
-#     metrics=['accuract']
-# )
+model.compile(
+    optimizer="adam",
+    loss="categorical_crossentropy",
+    metrics=['accuract']
+)
 
-# history=model.fit(
-#     X_train,Y_train,
-#     epochs=10,
-#     batch_size=32,
-#     validation_split=0.2
-# )
+history=model.fit(
+    X_train,Y_train,
+    epochs=10,
+    batch_size=32,
+    validation_split=0.2
+)
 
 test_lost,test_accuracy=model.evaluate(X_test,Y_test)
 print(f"Test Accuracy : {test_accuracy:.4f}")
