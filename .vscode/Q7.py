@@ -60,9 +60,9 @@ improved_model=Sequential([
 
 optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)
 
-improved_model.compile(optimizer=optimizer,loss='categorical_crossentropy',metrics=['accuracy'])
+# improved_model.compile(optimizer=optimizer,loss='categorical_crossentropy',metrics=['accuracy'])
 
-improved_model.summary()
+# improved_model.summary()
 
 # improved_history=improved_model.fit(
 #     X_train,Y_train,
