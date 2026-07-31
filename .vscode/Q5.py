@@ -29,7 +29,7 @@ model.summary()
 model.compile(
     optimizer="adam",
     loss="categorical_crossentropy",
-    metrics=['accuract']
+    metrics=['accuracy']
 )
 
 history=model.fit(
