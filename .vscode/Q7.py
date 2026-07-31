@@ -58,7 +58,7 @@ improved_model=Sequential([
       Dense(10,activation="softmax"),
 ])
 
-optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)
+# optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)
 
 # improved_model.compile(optimizer=optimizer,loss='categorical_crossentropy',metrics=['accuracy'])
 
