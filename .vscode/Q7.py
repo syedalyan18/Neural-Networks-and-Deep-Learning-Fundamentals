@@ -55,8 +55,8 @@ improved_model=Sequential([
       Flatten(),
       Dense(256, activation="relu"),
       Dropout(0.5),
-#       Dense(10,activation="softmax"),
-# ])
+      Dense(10,activation="softmax"),
+])
 
 # optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)
 
