@@ -47,9 +47,9 @@ print(f"Baseline Model Test Accuracy : {accuracy:.4f}")
 
 # IMPROVED MODEL
 
-# improved_model=Sequential([
-#       Conv2D(64,(5,5),activation="relu",input_shape=(32,32,3)),
-#       MaxPooling2D(2,2),
+improved_model=Sequential([
+      Conv2D(64,(5,5),activation="relu",input_shape=(32,32,3)),
+      MaxPooling2D(2,2),
 #       Conv2D(128,(5,5),activation="relu"),
 #       MaxPooling2D(2,2),
 #       Flatten(),
