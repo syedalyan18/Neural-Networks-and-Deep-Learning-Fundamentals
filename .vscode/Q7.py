@@ -62,15 +62,15 @@ optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)
 
 improved_model.compile(optimizer=optimizer,loss='categorical_crossentropy',metrics=['accuracy'])
 
-# improved_model.summary()
+improved_model.summary()
 
-# improved_history=improved_model.fit(
-#     X_train,Y_train,
-#     epochs=20,
-#     batch_size=64,
-#     validation_split=0.2,
-#     verbose=1
-# )
+improved_history=improved_model.fit(
+    X_train,Y_train,
+    epochs=20,
+    batch_size=64,
+    validation_split=0.2,
+    verbose=1
+)
 
 # improved_loss,improved_accuracy=improved_model.evaluate(X_test,Y_test,verbose=0)
 # print(f"Improved Model Test Accuracy : {improved_accuracy:.4f}")
