@@ -72,8 +72,8 @@ improved_history=improved_model.fit(
     verbose=1
 )
 
-# improved_loss,improved_accuracy=improved_model.evaluate(X_test,Y_test,verbose=0)
-# print(f"Improved Model Test Accuracy : {improved_accuracy:.4f}")
+improved_loss,improved_accuracy=improved_model.evaluate(X_test,Y_test,verbose=0)
+print(f"Improved Model Test Accuracy : {improved_accuracy:.4f}")
 
 # plt.plot(improved_history.history['loss'],label="Training Loss")
 # plt.plot(improved_history.history['val_loss'],label="Validation Loss")
