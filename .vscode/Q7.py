@@ -53,8 +53,8 @@ improved_model=Sequential([
       Conv2D(128,(5,5),activation="relu"),
       MaxPooling2D(2,2),
       Flatten(),
-#       Dense(256, activation="relu"),
-#       Dropout(0.5),
+      Dense(256, activation="relu"),
+      Dropout(0.5),
 #       Dense(10,activation="softmax"),
 # ])
 
